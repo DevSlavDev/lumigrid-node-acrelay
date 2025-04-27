@@ -1,70 +1,56 @@
-# ⚡ lumigrid-node-acrelay: Control AC Devices! ⚡
+# ✨ LumiGrid - AC Relay/Dimmer Node ✨
 
-Welcome to the lumigrid-node-acrelay repository! 🚀 This is where the code lives for the ESP32-powered AC Relay/Dimmer Node, designed to control AC-powered devices. Get ready to automate your home or projects! 🏠
+---
 
-This node is part of the LumiGrid ecosystem, brought to you by Cube & Reclame Fabriek, with development led by DevSlavDev.
+## 💡 What is this Node?
 
-## 📂 What's Inside?
+This ESP32-based node is the bridge between LumiGrid and your standard AC-powered devices! 🔌💡 Use it to simply switch devices on or off, or control dimmable AC loads like traditional incandescent or dimmable LED bulbs.
 
-This repository contains the code and resources for the AC Relay/Dimmer Node:
+Developed with passion by **DevSlavDev** 👨‍💻 in collaboration with **Cube & Reclame Fabriek** 🏢.
 
-* `app/`:  Source code for the ESP32 firmware (C++ with ESP-IDF). This handles AC device control and communication. 💻
-* `web/`:  Node-specific web UI components for controlling AC devices and configuring the node. 💅
-* `config/`:  Default configuration files for the AC Relay/Dimmer Node. ⚙️
-* `scripts/`:  Scripts for building and deploying the firmware to the ESP32. 🛠️
-* `README.md`:  That's me! 👋 Your guide to this repository.
+---
 
-## 🛠️ Project Structure
+## 🚀 Key Features
 
-Here's the repository structure:
+* **AC Control:** Safely control devices running on mains voltage. ⚡️
+* **On/Off Switching:** Simple relay functionality for switching AC devices.
+* **AC Dimming:** Control the brightness of dimmable AC loads (requires appropriate dimmer hardware). 💡
+* **Control Modes:** Supports External (MQTT), Sync (Master/Slave), and Independent modes. 🚦
+* **Calendar-Based Playback:** Equipped with an RTC for scheduled switching or dimming sequences. 🗓️
+* **Preset Support:** Define presets for specific AC states (e.g., "Living Room Lights On", "Lamp 50%").
+* **REST API & Web UI:** Configurable and controllable via local network. 🌐
 
-lumigrid-node-acrelay/
-├── app/        💻 (ESP32 Firmware)
-├── web/        💅 (Web UI)
-├── config/     ⚙️ (Configuration)
-├── scripts/    🛠️ (Build/Deploy Scripts)
-└── README.md   📖 (You are here!)
+---
 
+## 🧠 Technology Stack
 
-## 🔗 Related Repositories
+* **Hardware:** ESP32-WROOM + AC Control Circuitry (Relay and/or Dimmer) 🤖
+* **Firmware:** ESP-IDF (C++)
+* **Communication:** WiFi, HTTP/REST, mDNS, UDP (for Sync).
+* **Safety:** Critical focus on electrical isolation and safety during design and implementation. ⚠️
 
-* [LumiGrid (Main Repository)](https://github.com/DevSlavDev/LumiGrid):  Contains shared resources and documentation. 🧠
+---
 
-## ✨ Features
+## 🚧 Work In Progress (WIP)! 🚧
 
-* Controls AC devices with on/off functionality. [cite: 31]
-* Provides AC dimming capabilities. [cite: 31]
-* Offers a web interface and REST API for control. [cite: 32]
+This node is currently under active development planning. 🌱 The focus is on selecting reliable and safe AC control circuitry and implementing the control logic within the ESP32 firmware.
 
-## 🚀 Getting Started
+Development of this node will be part of the ESP32 phase after the Sensor Node.
 
-1.  **Clone this repository:**
+---
 
-    ```bash
-    git clone [https://github.com/DevSlavDev/lumigrid-node-acrelay.git](https://github.com/DevSlavDev/lumigrid-node-acrelay.git)
-    cd lumigrid-node-acrelay
-    ```
+## 🤝 Contributions
 
-2.  **Set up your ESP32 development environment:** You'll need the ESP-IDF framework.
+Currently, contributions are not being actively accepted for this specific node. We are focusing on building the core system structure.
 
-3.  **Explore the code in the `app/` directory.**
+**HOWEVER!** We are building this with future collaboration in mind! 🎉 Once the main code is complete and stable, we plan to open up contributions. Keep an eye on the main LumiGrid repository for updates! 👀
 
-4.  **Build and flash the firmware to your ESP32.**
+---
 
-5.  **Connect your AC devices to the node.** ⚠️ **(Safety first! Work with AC power carefully.)**
+## 🔗 Stay Tuned!
 
-6.  **Use the web UI to control your devices!**
+Follow the main LumiGrid repository for updates on our progress! 😊
 
-## 🤝 Contributing
+---
 
-Contributions are welcome! If you have improvements to AC device control, dimming algorithms, the web interface, or any other part of the project, please submit a pull request. 💪
-
-## 🐛 Issues
-
-Please report any bugs or issues in this repository.
-
-## 📜 License
-
-\[License information will go here]
-
-## Let's automate some devices! 🏠
+Made with ❤️ by DevSlavDev for Cube & Reclame Fabriek
